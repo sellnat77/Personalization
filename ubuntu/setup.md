@@ -7,3 +7,9 @@ https://ohmyz.sh/
 
 ## Node
 https://github.com/nvm-sh/nvm#installing-and-updating
+
+## Docker
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+
+## Rest api tester
+https://docs.insomnia.rest/insomnia/install
