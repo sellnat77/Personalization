@@ -1,0 +1,48 @@
+{
+  "font_size": 8,
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+  // Columns in which to display vertical rulers. You can also pair the column
+  // with a ruler style (See "ruler_style"), eg: [[80, "solid"]]
+  "rulers": [[80, "stippled"]],
+  // Set to true to turn spell checking on by default
+  "spell_check": true,
+  // The number of spaces a tab is considered equal to
+  "tab_size": 2,
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": true,
+  // Always visualise the viewport on the minimap, as opposed to only
+  // showing it on mouse over
+  "always_show_minimap_viewport": true,
+  // If enabled, will highlight any line with a caret
+  "highlight_line": true,
+  // Valid values are "smooth", "phase", "blink" and "solid". Previous
+  // versions of Sublime Text used "smooth" by default.
+  "caret_style": "phase",
+  "caret_extra_width": 2,
+  "draw_white_space": ["selection", "leading", "trailing", "isolated"],
+  // Controls how the indent guides are drawn. Options may be combined, with
+  // valid options being:
+  //  - "draw_normal" - will draw plain indent guides for every indentation
+  //    group
+  //  - "draw_active" - will draw indent guides for the group
+  //    containing the caret in a different color
+  //  - "draw_active_single" - will draw the right-most indent guide in the
+  //    group containing the caret in a different color
+  //  - "solid" - can be combined with any of the draw_* options to draw
+  //    solid instead of stippled lines
+  "indent_guide_options": ["draw_normal", "draw_active"],
+  // Makes tabs with modified files more visible
+  "highlight_modified_tabs": true,
+  // Show folders in the sidebar in bold
+  "bold_folder_labels": true,
+  // Preview file contents when clicking on a file in the sidebar. Double
+  // clicking or editing the preview will open the file and assign it a tab.
+  // - true: Always preview on click, including right click
+  // - false: Never preview
+  // - "only_left": Only preview on left click, right click will change the
+  //                selection but not preview the file.
+  "preview_on_click": false,
+}
