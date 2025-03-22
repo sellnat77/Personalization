@@ -7,6 +7,45 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "language_models": {
+    "ollama": {
+      "api_url": "https://llama.rt-srvr.duckdns.org",
+      "available_models": [
+        {
+          "name": "qwen2.5-coder:3b",
+          "max_tokens": 32768
+        }
+      ]
+    }
+  },
+  "assistant": {
+    // Version of this setting.
+    "version": "2",
+    // Whether the assistant is enabled.
+    "enabled": true,
+    // Whether to show the assistant panel button in the status bar.
+    "button": true,
+    // Where to dock the assistant panel. Can be 'left', 'right' or 'bottom'.
+    "dock": "right",
+    // Default width when the assistant is docked to the left or right.
+    "default_width": 640,
+    // Default height when the assistant is docked to the bottom.
+    "default_height": 320,
+    // The default model to use when creating new chats.
+    "default_model": {
+      // The provider to use.
+      "provider": "ollama",
+      // The model to use.
+      "model": "qwen2.5-coder:3b"
+    },
+    // The model to use when applying edits from the assistant.
+    "editor_model": {
+      // The provider to use.
+      "provider": "ollama",
+      // The model to use.
+      "model": "qwen2.5-coder"
+    }
+  },
   "ui_font_size": 12,
   "buffer_font_size": 12,
   "buffer_line_height": "standard",
@@ -144,34 +183,6 @@
       // 2. Never show indent guides:
       //    "never"
       "show": "always"
-    }
-  },
-  "assistant": {
-    // Version of this setting.
-    "version": "2",
-    // Whether the assistant is enabled.
-    "enabled": true,
-    // Whether to show the assistant panel button in the status bar.
-    "button": true,
-    // Where to dock the assistant panel. Can be 'left', 'right' or 'bottom'.
-    "dock": "right",
-    // Default width when the assistant is docked to the left or right.
-    "default_width": 640,
-    // Default height when the assistant is docked to the bottom.
-    "default_height": 320,
-    // The default model to use when creating new chats.
-    "default_model": {
-      // The provider to use.
-      "provider": "zed.dev",
-      // The model to use.
-      "model": "claude-3-5-sonnet-latest"
-    },
-    // The model to use when applying edits from the assistant.
-    "editor_model": {
-      // The provider to use.
-      "provider": "zed.dev",
-      // The model to use.
-      "model": "claude-3-5-sonnet-latest"
     }
   },
   "preview_tabs": {
